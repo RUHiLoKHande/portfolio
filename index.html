@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushikesh Ramesh Lokhande | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #home {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            animation: fadeIn 2s;
+        }
+
+        #home h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: slideIn 1s;
+        }
+
+        #home .tagline {
+            margin: 10px 0 20px;
+            font-size: 1.2rem;
+            animation: fadeIn 2s;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            color: white;
+            background: #007bff;
+            border: none;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+            transform: scale(1.1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .project-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project {
+            background: #f9f9f9;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea, form button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        form button {
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        form button:hover {
+            background: #218838;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home-content">
+            <h1 class="animated">Rushikesh Ramesh Lokhande</h1>
+            <p class="tagline">Aspiring Data Scientist | Full-Stack Developer | Machine Learning Enthusiast</p>
+            <div class="buttons">
+                <a href="#about" class="btn">Explore My Journey</a>
+                <a href="Rushikesh_Lokhande_1.pdf" target="_blank" class="btn">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I’m Rushikesh, a Computer Science Engineering student with a passion for problem-solving, data science, and web development.</p>
+
+        <h3>Education</h3>
+        <ul>
+            <li>Bachelor's in Computer Science Engineering: MIT ADT University (Expected Graduation: April 2025)</li>
+            <li>Higher Secondary Education: RR Shinde Junior College, Pune (69.82%)</li>
+            <li>Secondary Education: New English School, Sasane Nagar, Pune (65.43%)</li>
+        </ul>
+
+        <h3>Skills</h3>
+        <ul>
+            <li><strong>Programming:</strong> Java, Python</li>
+            <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Data Science Tools:</strong> Machine Learning, Power BI</li>
+            <li><strong>Cloud & Database:</strong> AWS, BigData, SQL</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>ETF Stock Prediction</h3>
+                <p>Predicted stock prices for the next 10 days using a dashboard connected to an Excel sheet.</p>
+            </div>
+            <div class="project">
+                <h3>Car Price Prediction System</h3>
+                <p>Built a regression model to predict car prices based on features like mileage and engine size.</p>
+            </div>
+            <div class="project">
+                <h3>Movie Recommender System</h3>
+                <p>Content-based movie recommendation system using Streamlit.</p>
+            </div>
+            <div class="project">
+                <h3>Governance at Your Door</h3>
+                <p>Developed a governance transparency tool using HTML, CSS, JavaScript, and PHP.</p>
+            </div>
+            <div class="project">
+                <h3>Analyzing-The-Zomato-Dataset</h3>
+                <p>An exploration of restaurant data to uncover insights into customer preferences, pricing trends, and regional popularity.</p>
+            </div>
+            <div class="project">
+                <h3>Car-Price-Prediction-using-Linear-Regression</h3>
+                <p>Developed a model to estimate car prices based on features such as mileage, engine size, and fuel type, enabling data-driven decisions for buyers and sellers.</p>
+            </div>
+            <div class="project">
+                <h3>Email_spam_detection </h3>
+                <p>A machine learning-based system to classify emails as spam or not spam using text analysis techniques.</p>
+            </div>
+            <div class="project">
+                <h3>AmazonShop-FrontEnd</h3>
+                <p>AmazonShop-FrontEnd" is a repository for the basic front end of an e-commerce website, designed for a seamless shopping experience for customers.</p>
+            </div>
+            <div class="project">
+                <h3>Simple-Chat_Bot</h3>
+                <p>A simple rule-based chatbot using Python and regular expressions to provide responses based on user input.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+            <button type="button" onclick="sendEmail()">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        function sendEmail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                const mailtoLink = `mailto:your-email@example.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0AFrom: ${encodeURIComponent(email)}`;
+                window.location.href = mailtoLink;
+            } else {
+                alert('Please fill in all fields before submitting.');
+            }
+        }
+    </script>
+</body>
+</html>
